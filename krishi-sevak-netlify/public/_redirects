@@ -1,0 +1,9 @@
+# Redirects for Netlify
+/* This file is used to define URL redirects and rewrites for the application. */
+
+# Redirect from old URL to new URL
+/old-url    /new-url    301! 
+
+# Redirect all traffic to index.html
+/* This will ensure that all requests are served by the index.html file */
+*    /index.html    200

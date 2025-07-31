@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Agriculture Platform - Krishi Sevak | Interactive Demo & Features</title>
+    <meta name="description" content="Experience Krishi Sevak's revolutionary AI agriculture platform. Interactive soil health dashboard, multilingual voice assistant, and mobile app demo for sustainable farming solutions." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fkrishisev4432back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-inter">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 45C20 38.3726 25.3726 33 32 33C38.6274 33 44 38.3726 44 45" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M32 33V15" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M26 21L32 15L38 21" stroke="#2E7D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="45" r="3" fill="#FF8F00"/>
+                            <text x="60" y="25" font-family="Lora" font-size="18" font-weight="600" fill="#2E7D32">Krishi</text>
+                            <text x="60" y="45" font-family="Lora" font-size="18" font-weight="600" fill="#5D4037">Sevak</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage_agri_tech_mission_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <div class="relative group">
+                            <button class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                                Our Story
+                                <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-card opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <a href="founders_journey_vision_authenticity.html" class="block px-4 py-2 text-sm text-text-secondary hover:text-primary hover:bg-surface">Founders Journey</a>
+                                <a href="impact_stories_farmer_success_gallery.html" class="block px-4 py-2 text-sm text-text-secondary hover:text-primary hover:bg-surface">Impact Stories</a>
+                            </div>
+                        </div>
+                        <a href="product_showcase_ai_agriculture_platform.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">AI Platform</a>
+                        <a href="partnership_portal_collaboration_gateway.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium">Partners</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="early_access_hub_beta_program_portal.html" class="btn-primary">
+                        Get Early Access
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border-light">
+                <a href="homepage_agri_tech_mission_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="founders_journey_vision_authenticity.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Founders Journey</a>
+                <a href="product_showcase_ai_agriculture_platform.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">AI Platform</a>
+                <a href="impact_stories_farmer_success_gallery.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Impact Stories</a>
+                <a href="partnership_portal_collaboration_gateway.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Partners</a>
+                <a href="early_access_hub_beta_program_portal.html" class="btn-primary mt-4 mx-3 text-center block">Get Early Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-earth overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-lora font-bold text-text-primary mb-6">
+                    AI That Understands
+                    <span class="text-primary block">Your Farm</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Experience our revolutionary AI agriculture platform through interactive demos. 
+                    See how technology meets tradition to transform farming across India.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="btn-primary text-lg px-8 py-4 flex items-center" onclick="scrollToDemo()">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Try Live Demo
+                    </button>
+                    <a href="early_access_hub_beta_program_portal.html" class="btn-secondary text-lg px-8 py-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                        Request Beta Access
+                    </a>
+                </div>
+            </div>
+
+            <!-- Platform Overview Cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card card-hover text-center">
+                    <div class="bg-primary-100 p-4 rounded-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-2">Soil Health Dashboard</h3>
+                    <p class="text-text-secondary text-sm">Real-time soil analysis with AI-powered recommendations for optimal crop health.</p>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="bg-accent-100 p-4 rounded-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-2">Voice Assistant</h3>
+                    <p class="text-text-secondary text-sm">Multilingual AI advisor speaking Hindi, Telugu, Tamil, and 8+ regional languages.</p>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="bg-secondary-100 p-4 rounded-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-2">Mobile App</h3>
+                    <p class="text-text-secondary text-sm">Offline-capable mobile interface designed for rural connectivity challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soil Health Dashboard Demo -->
+    <section id="soil-demo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-4">
+                    Soil Health Dashboard
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Real-time soil analysis powered by AI, providing actionable insights for sustainable farming practices.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Dashboard Interface -->
+                <div class="bg-gradient-harvest rounded-xl p-8">
+                    <div class="bg-white rounded-lg p-6 shadow-card">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="font-lora font-semibold text-text-primary">Farm: Rajesh Kumar - Ludhiana, Punjab</h3>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <span class="text-sm text-success font-medium">Live Data</span>
+                            </div>
+                        </div>
+
+                        <!-- Soil Metrics Grid -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-surface p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-text-secondary">pH Level</span>
+                                    <span class="text-xs text-success bg-success-light px-2 py-1 rounded">Optimal</span>
+                                </div>
+                                <div class="text-2xl font-bold text-primary">6.8</div>
+                                <div class="w-full bg-border-light rounded-full h-2 mt-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 68%"></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-text-secondary">Nitrogen</span>
+                                    <span class="text-xs text-warning bg-warning-light px-2 py-1 rounded">Low</span>
+                                </div>
+                                <div class="text-2xl font-bold text-warning">245 kg/ha</div>
+                                <div class="w-full bg-border-light rounded-full h-2 mt-2">
+                                    <div class="bg-warning h-2 rounded-full" style="width: 35%"></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-text-secondary">Phosphorus</span>
+                                    <span class="text-xs text-success bg-success-light px-2 py-1 rounded">Good</span>
+                                </div>
+                                <div class="text-2xl font-bold text-success">28 kg/ha</div>
+                                <div class="w-full bg-border-light rounded-full h-2 mt-2">
+                                    <div class="bg-success h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface p-4 rounded-lg">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-text-secondary">Organic Matter</span>
+                                    <span class="text-xs text-primary bg-primary-100 px-2 py-1 rounded">Excellent</span>
+                                </div>
+                                <div class="text-2xl font-bold text-primary">3.2%</div>
+                                <div class="w-full bg-border-light rounded-full h-2 mt-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Recommendations -->
+                        <div class="bg-primary-50 p-4 rounded-lg">
+                            <h4 class="font-lora font-semibold text-text-primary mb-3 flex items-center">
+                                <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                                AI Recommendations
+                            </h4>
+                            <ul class="space-y-2 text-sm text-text-secondary">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Apply 50 kg/ha urea to address nitrogen deficiency before next irrigation
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Consider green manure crop rotation to maintain organic matter levels
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Optimal planting window: Next 7-10 days based on weather forecast
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Real-Time Monitoring</h4>
+                            <p class="text-text-secondary">IoT sensors provide continuous soil health data with 95% accuracy, updated every 6 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Predictive Analytics</h4>
+                            <p class="text-text-secondary">AI algorithms predict soil health trends 30 days in advance, enabling proactive farming decisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Cost Optimization</h4>
+                            <p class="text-text-secondary">Reduce fertilizer costs by 25-30% through precise nutrient recommendations and timing.</p>
+                        </div>
+                    </div>
+
+                    <!-- ROI Calculator -->
+                    <div class="bg-success-light p-6 rounded-lg">
+                        <h4 class="font-lora font-semibold text-text-primary mb-4">ROI Calculator</h4>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-success">₹45,000</div>
+                                <div class="text-sm text-text-secondary">Annual Savings</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-primary">340%</div>
+                                <div class="text-sm text-text-secondary">ROI in Year 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voice Assistant Demo -->
+    <section class="py-20 bg-gradient-earth">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-4">
+                    Multilingual Voice Assistant
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    AI-powered farming advisor that speaks your language. Experience natural conversations in Hindi, Telugu, Tamil, and 8+ regional languages.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Voice Interface Demo -->
+                <div class="bg-white rounded-xl p-8 shadow-card">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-lora font-semibold text-text-primary">Voice Assistant Demo</h3>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-1 bg-primary text-white text-xs rounded-full" onclick="switchLanguage('hindi')">हिंदी</button>
+                            <button class="px-3 py-1 bg-accent-100 text-accent text-xs rounded-full" onclick="switchLanguage('telugu')">తెలుగు</button>
+                            <button class="px-3 py-1 bg-secondary-100 text-secondary text-xs rounded-full" onclick="switchLanguage('tamil')">தமிழ்</button>
+                        </div>
+                    </div>
+
+                    <!-- Voice Waveform -->
+                    <div class="flex items-center justify-center h-32 bg-surface rounded-lg mb-6">
+                        <div class="flex items-end space-x-1" id="waveform">
+                            <div class="w-2 bg-primary h-8 rounded animate-pulse"></div>
+                            <div class="w-2 bg-primary h-12 rounded animate-pulse" style="animation-delay: 0.1s"></div>
+                            <div class="w-2 bg-primary h-6 rounded animate-pulse" style="animation-delay: 0.2s"></div>
+                            <div class="w-2 bg-primary h-16 rounded animate-pulse" style="animation-delay: 0.3s"></div>
+                            <div class="w-2 bg-primary h-10 rounded animate-pulse" style="animation-delay: 0.4s"></div>
+                            <div class="w-2 bg-primary h-14 rounded animate-pulse" style="animation-delay: 0.5s"></div>
+                            <div class="w-2 bg-primary h-8 rounded animate-pulse" style="animation-delay: 0.6s"></div>
+                        </div>
+                    </div>
+
+                    <!-- Conversation Demo -->
+                    <div class="space-y-4" id="conversation">
+                        <div class="bg-surface p-4 rounded-lg">
+                            <p class="text-sm text-text-secondary mb-1">किसान (Farmer):</p>
+                            <p class="text-text-primary">"मेरे टमाटर के पत्तों पर पीले धब्बे दिख रहे हैं। क्या करूं?"</p>
+                        </div>
+                        <div class="bg-primary-50 p-4 rounded-lg">
+                            <p class="text-sm text-primary mb-1">कृषि सेवक AI:</p>
+                            <p class="text-text-primary">"यह टमाटर में पत्ती झुलसा रोग हो सकता है। मैं आपको तुरंत समाधान बताता हूं। पहले अपने पौधे की फोटो भेजें।"</p>
+                        </div>
+                    </div>
+
+                    <!-- Voice Controls -->
+                    <div class="mt-6 flex justify-center space-x-4">
+                        <button class="bg-primary text-white px-6 py-3 rounded-lg flex items-center hover:bg-primary-700 transition-colors" onclick="playDemo()">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Play Demo
+                        </button>
+                        <button class="bg-accent text-white px-6 py-3 rounded-lg flex items-center hover:bg-accent-700 transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                            </svg>
+                            Try Voice Input
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Language Features -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">12+ Regional Languages</h4>
+                            <p class="text-text-secondary">Hindi, Telugu, Tamil, Kannada, Marathi, Gujarati, Punjabi, Bengali, and more regional dialects.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Context-Aware Responses</h4>
+                            <p class="text-text-secondary">AI understands farming context, local weather, crop cycles, and regional agricultural practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Offline Capability</h4>
+                            <p class="text-text-secondary">Core voice features work offline, essential for rural areas with limited internet connectivity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sample Conversations -->
+                    <div class="bg-white p-6 rounded-lg shadow-card">
+                        <h4 class="font-lora font-semibold text-text-primary mb-4">Sample Conversations</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="text-text-secondary">"ధాన్యం ఎప్పుడు కోయాలి?" (Telugu)</span>
+                                <button class="text-primary hover:text-primary-700">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="text-text-secondary">"என் நெல் பயிரில் பூச்சி தாக்குதல்" (Tamil)</span>
+                                <button class="text-primary hover:text-primary-700">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="text-text-secondary">"मिट्टी की जांच कैसे करें?" (Hindi)</span>
+                                <button class="text-primary hover:text-primary-700">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Transformation Slider -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-4">
+                    Documented Transformations
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Real before/after results from our beta testing program. See the measurable impact of AI-driven agriculture.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Transformation Case 1 -->
+                <div class="bg-gradient-harvest rounded-xl p-8">
+                    <div class="bg-white rounded-lg p-6 shadow-card">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h3 class="font-lora font-semibold text-text-primary">Suresh Patel's Cotton Farm</h3>
+                                <p class="text-sm text-text-secondary">Ahmedabad, Gujarat • 6 months</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-success">+52%</div>
+                                <div class="text-sm text-text-secondary">Yield Increase</div>
+                            </div>
+                        </div>
+
+                        <!-- Before/After Slider -->
+                        <div class="relative overflow-hidden rounded-lg mb-6">
+                            <div class="relative h-64">
+                                <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Before - Degraded soil condition" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                    <span class="text-white font-semibold">BEFORE: Poor Soil Health</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-2">
+                                <button class="bg-white text-text-primary px-3 py-1 rounded text-sm font-medium" onclick="toggleSlider(1)">
+                                    View After
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Metrics Comparison -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">3.2</div>
+                                <div class="text-xs text-text-secondary">pH Before</div>
+                                <div class="text-lg font-bold text-success">6.8</div>
+                                <div class="text-xs text-text-secondary">pH After</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">1.1%</div>
+                                <div class="text-xs text-text-secondary">Organic Matter</div>
+                                <div class="text-lg font-bold text-success">3.2%</div>
+                                <div class="text-xs text-text-secondary">Organic Matter</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">₹85k</div>
+                                <div class="text-xs text-text-secondary">Annual Income</div>
+                                <div class="text-lg font-bold text-success">₹1.3L</div>
+                                <div class="text-xs text-text-secondary">Annual Income</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Case 2 -->
+                <div class="bg-gradient-earth rounded-xl p-8">
+                    <div class="bg-white rounded-lg p-6 shadow-card">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h3 class="font-lora font-semibold text-text-primary">Priya Devi's Vegetable Farm</h3>
+                                <p class="text-sm text-text-secondary">Mysore, Karnataka • 8 months</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-success">+45%</div>
+                                <div class="text-sm text-text-secondary">Yield Increase</div>
+                            </div>
+                        </div>
+
+                        <!-- Before/After Slider -->
+                        <div class="relative overflow-hidden rounded-lg mb-6">
+                            <div class="relative h-64">
+                                <img src="https://images.pixabay.com/photo/2016/08/11/23/48/vegetables-1589394_1280.jpg" alt="After - Healthy vegetable crops" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                    <span class="text-white font-semibold">AFTER: Thriving Organic Vegetables</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-2 right-2">
+                                <button class="bg-white text-text-primary px-3 py-1 rounded text-sm font-medium" onclick="toggleSlider(2)">
+                                    View Before
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Metrics Comparison -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">180</div>
+                                <div class="text-xs text-text-secondary">kg/month Before</div>
+                                <div class="text-lg font-bold text-success">260</div>
+                                <div class="text-xs text-text-secondary">kg/month After</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">65%</div>
+                                <div class="text-xs text-text-secondary">Pest Damage</div>
+                                <div class="text-lg font-bold text-success">12%</div>
+                                <div class="text-xs text-text-secondary">Pest Damage</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-error">₹18k</div>
+                                <div class="text-xs text-text-secondary">Monthly Income</div>
+                                <div class="text-lg font-bold text-success">₹32k</div>
+                                <div class="text-xs text-text-secondary">Monthly Income</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scientific Backing -->
+            <div class="mt-16 text-center">
+                <div class="bg-primary-50 p-8 rounded-xl">
+                    <h3 class="font-lora font-semibold text-text-primary mb-4">Scientific Validation</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-2xl font-bold text-primary mb-2">95%</div>
+                            <div class="text-sm text-text-secondary">Accuracy in Crop Disease Detection</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-accent mb-2">40%</div>
+                            <div class="text-sm text-text-secondary">Average Yield Improvement</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-secondary mb-2">30%</div>
+                            <div class="text-sm text-text-secondary">Reduction in Input Costs</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-4">
+                        Results validated by Indian Agricultural Research Institute (IARI) and 
+                        University of Agricultural Sciences, Bangalore
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Preview -->
+    <section class="py-20 bg-gradient-earth">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-4">
+                    Mobile App Interface
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Designed for rural connectivity challenges with offline-first architecture and intuitive touch interface.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Mobile App Mockup -->
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-96 bg-white rounded-3xl p-6 shadow-elevated">
+                            <!-- Phone Header -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-xs text-text-secondary">Offline Mode</span>
+                                </div>
+                                <div class="text-xs text-text-secondary">12:34 PM</div>
+                            </div>
+
+                            <!-- App Interface -->
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3 p-3 bg-primary-50 rounded-lg">
+                                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary text-sm">Voice Assistant</div>
+                                        <div class="text-xs text-text-secondary">Ask in your language</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-3 p-3 bg-accent-50 rounded-lg">
+                                    <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary text-sm">Crop Scanner</div>
+                                        <div class="text-xs text-text-secondary">Instant disease detection</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-3 p-3 bg-secondary-50 rounded-lg">
+                                    <div class="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary text-sm">Soil Dashboard</div>
+                                        <div class="text-xs text-text-secondary">Real-time monitoring</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-3 p-3 bg-success-light rounded-lg">
+                                    <div class="w-10 h-10 bg-success rounded-lg flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary text-sm">Weather Alerts</div>
+                                        <div class="text-xs text-text-secondary">Hyper-local forecasts</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Navigation -->
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <div class="flex justify-around p-2 bg-surface rounded-lg">
+                                    <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                                        </svg>
+                                    </div>
+                                    <div class="w-8 h-8 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="w-8 h-8 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Features -->
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-primary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Offline-First Design</h4>
+                            <p class="text-text-secondary">Core features work without internet. Data syncs automatically when connection is available.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-accent-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Smart Camera Integration</h4>
+                            <p class="text-text-secondary">AI-powered crop scanning works with basic smartphone cameras. Instant disease and pest identification.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-lora font-semibold text-text-primary mb-2">Low-Data Optimization</h4>
+                            <p class="text-text-secondary">Designed for 2G/3G networks. Compressed data transfer and smart caching for rural connectivity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Download Links -->
+                    <div class="bg-white p-6 rounded-lg shadow-card">
+                        <h4 class="font-lora font-semibold text-text-primary mb-4">Download Beta App</h4>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="early_access_hub_beta_program_portal.html" class="flex items-center justify-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                                </svg>
+                                App Store
+                            </a>
+                            <a href="early_access_hub_beta_program_portal.html" class="flex items-center justify-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-700 transition-colors">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                                </svg>
+                                Google Play
+                            </a>
+                        </div>
+                        <p class="text-xs text-text-muted mt-2">Beta version available for registered users only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-4">
+                    Technical Specifications
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Built for scalability, security, and seamless integration with existing agricultural systems.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI & Machine Learning -->
+                <div class="card">
+                    <div class="bg-primary-100 p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">AI & Machine Learning</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• TensorFlow & PyTorch models</li>
+                        <li>• Computer vision for crop analysis</li>
+                        <li>• Natural language processing</li>
+                        <li>• Predictive analytics engine</li>
+                        <li>• Edge computing optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="card">
+                    <div class="bg-accent-100 p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">Data & Analytics</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• Real-time data processing</li>
+                        <li>• MongoDB & PostgreSQL</li>
+                        <li>• Apache Kafka streaming</li>
+                        <li>• Advanced analytics dashboard</li>
+                        <li>• Data privacy compliance</li>
+                    </ul>
+                </div>
+
+                <!-- Mobile & Web -->
+                <div class="card">
+                    <div class="bg-secondary-100 p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">Mobile & Web</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• React Native cross-platform</li>
+                        <li>• Progressive Web App (PWA)</li>
+                        <li>• Offline-first architecture</li>
+                        <li>• Responsive design system</li>
+                        <li>• Touch-optimized interface</li>
+                    </ul>
+                </div>
+
+                <!-- Integration APIs -->
+                <div class="card">
+                    <div class="bg-success-light p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">Integration APIs</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• RESTful API architecture</li>
+                        <li>• Government scheme integration</li>
+                        <li>• Weather data APIs</li>
+                        <li>• Market price feeds</li>
+                        <li>• Third-party IoT sensors</li>
+                    </ul>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="card">
+                    <div class="bg-warning-light p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">Security & Compliance</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• End-to-end encryption</li>
+                        <li>• GDPR & data privacy</li>
+                        <li>• Multi-factor authentication</li>
+                        <li>• Regular security audits</li>
+                        <li>• Farmer data protection</li>
+                    </ul>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="card">
+                    <div class="bg-primary-100 p-3 rounded-lg w-12 h-12 mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-lora font-semibold text-text-primary mb-3">Infrastructure</h3>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• AWS cloud infrastructure</li>
+                        <li>• Auto-scaling capabilities</li>
+                        <li>• CDN for global delivery</li>
+                        <li>• 99.9% uptime guarantee</li>
+                        <li>• Disaster recovery systems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- API Documentation -->
+            <div class="mt-16 bg-gradient-harvest rounded-xl p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-lora font-bold text-text-primary mb-4">Developer Resources</h3>
+                    <p class="text-text-secondary">Comprehensive APIs for NGOs, researchers, and agricultural technology partners.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-card">
+                        <h4 class="font-lora font-semibold text-text-primary mb-4">API Endpoints</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="font-mono text-primary">GET /api/soil-health</span>
+                                <span class="text-xs text-success bg-success-light px-2 py-1 rounded">Active</span>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="font-mono text-primary">POST /api/crop-analysis</span>
+                                <span class="text-xs text-success bg-success-light px-2 py-1 rounded">Active</span>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="font-mono text-primary">GET /api/weather-forecast</span>
+                                <span class="text-xs text-success bg-success-light px-2 py-1 rounded">Active</span>
+                            </div>
+                            <div class="flex justify-between items-center p-2 bg-surface rounded">
+                                <span class="font-mono text-primary">POST /api/voice-query</span>
+                                <span class="text-xs text-warning bg-warning-light px-2 py-1 rounded">Beta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-card">
+                        <h4 class="font-lora font-semibold text-text-primary mb-4">Integration Support</h4>
+                        <ul class="space-y-3 text-sm text-text-secondary">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Comprehensive API documentation
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                SDK for popular languages
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Sandbox environment for testing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                24/7 developer support
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="partnership_portal_collaboration_gateway.html" class="btn-primary">
+                                Request API Access
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-earth">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-lora font-bold text-text-primary mb-6">
+                Ready to Experience the Future of Farming?
+            </h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Join our beta program and be among the first farmers to experience AI-powered agriculture. 
+                Transform your farming with technology that truly understands your needs.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="early_access_hub_beta_program_portal.html" class="btn-primary text-lg px-8 py-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                    Join Beta Program
+                </a>
+                <a href="partnership_portal_collaboration_gateway.html" class="btn-secondary text-lg px-8 py-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                    Partner With Us
+                </a>
+            </div>
+
+            <div class="mt-8 text-sm text-text-muted">
+                <p>✓ Free beta access • ✓ Multilingual support • ✓ Offline functionality • ✓ 24/7 farmer helpline</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto mr-3" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 45C20 38.3726 25.3726 33 32 33C38.6274 33 44 38.3726 44 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M32 33V15" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M26 21L32 15L38 21" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="45" r="3" fill="#FF8F00"/>
+                            <text x="60" y="25" font-family="Lora" font-size="18" font-weight="600" fill="white">Krishi</text>
+                            <text x="60" y="45" font-family="Lora" font-size="18" font-weight="600" fill="#FF8F00">Sevak</text>
+                        </svg>
+                    </div>
+                    <p class="text-secondary-200 mb-4 max-w-md">
+                        Empowering Indian farmers with AI-driven agricultural solutions. Growing farmers, growing futures.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-lora font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="product_showcase_ai_agriculture_platform.html" class="text-secondary-200 hover:text-white transition-colors">AI Platform</a></li>
+                        <li><a href="impact_stories_farmer_success_gallery.html" class="text-secondary-200 hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="founders_journey_vision_authenticity.html" class="text-secondary-200 hover:text-white transition-colors">Our Journey</a></li>
+                        <li><a href="early_access_hub_beta_program_portal.html" class="text-secondary-200 hover:text-white transition-colors">Beta Program</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-lora font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">WhatsApp Support</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-200 hover:text-white transition-colors">Farmer Helpline</a></li>
+                        <li><a href="partnership_portal_collaboration_gateway.html" class="text-secondary-200 hover:text-white transition-colors">Partner With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-600 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-200 text-sm">
+                    © 2025 Krishi Sevak. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-secondary-200 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-secondary-200 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-secondary-200 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll to demo section
+        function scrollToDemo() {
+            document.getElementById('soil-demo').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Language switcher for voice demo
+        function switchLanguage(language) {
+            const conversation = document.getElementById('conversation');
+            const conversations = {
+                hindi: `
+                    <div class="bg-surface p-4 rounded-lg">
+                        <p class="text-sm text-text-secondary mb-1">किसान (Farmer):</p>
+                        <p class="text-text-primary">"मेरे टमाटर के पत्तों पर पीले धब्बे दिख रहे हैं। क्या करूं?"</p>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg">
+                        <p class="text-sm text-primary mb-1">कृषि सेवक AI:</p>
+                        <p class="text-text-primary">"यह टमाटर में पत्ती झुलसा रोग हो सकता है। मैं आपको तुरंत समाधान बताता हूं। पहले अपने पौधे की फोटो भेजें।"</p>
+                    </div>
+                `,
+                telugu: `
+                    <div class="bg-surface p-4 rounded-lg">
+                        <p class="text-sm text-text-secondary mb-1">రైతు (Farmer):</p>
+                        <p class="text-text-primary">"నా వరి పంటలో పసుపు రంగు మచ్చలు కనిపిస్తున్నాయి। ఏమి చేయాలి?"</p>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg">
+                        <p class="text-sm text-primary mb-1">కృషి సేవక్ AI:</p>
+                        <p class="text-text-primary">"ఇది వరిలో బ్లాస్ట్ వ్యాధి కావచ్చు. మీ పంట ఫోటో పంపండి, నేను వెంటనే సరైన చికిత్స చెప్తాను।"</p>
+                    </div>
+                `,
+                tamil: `
+                    <div class="bg-surface p-4 rounded-lg">
+                        <p class="text-sm text-text-secondary mb-1">விவசாயி (Farmer):</p>
+                        <p class="text-text-primary">"என் நெல் பயிரில் மஞ்சள் நிற புள்ளிகள் தெரிகின்றன। என்ன செய்வது?"</p>
+                    </div>
+                    <div class="bg-primary-50 p-4 rounded-lg">
+                        <p class="text-sm text-primary mb-1">கிருஷி சேவக் AI:</p>
+                        <p class="text-text-primary">"இது நெல்லில் பிளாஸ்ட் நோயாக இருக்கலாம். உங்கள் பயிரின் புகைப்படத்தை அனுப்புங்கள், நான் உடனே சரியான சிகிச்சை சொல்கிறேன்."</p>
+                    </div>
+                `
+            };
+            
+            conversation.innerHTML = conversations[language];
+            
+            // Update active language button
+            document.querySelectorAll('button[onclick^="switchLanguage"]').forEach(btn => {
+                btn.className = 'px-3 py-1 bg-accent-100 text-accent text-xs rounded-full';
+            });
+            event.target.className = 'px-3 py-1 bg-primary text-white text-xs rounded-full';
+        }
+
+        // Play demo function
+        function playDemo() {
+            const waveform = document.getElementById('waveform');
+            waveform.classList.add('animate-pulse');
+            
+            // Simulate audio playing
+            setTimeout(() => {
+                waveform.classList.remove('animate-pulse');
+            }, 3000);
+        }
+
+        // Toggle before/after slider
+        function toggleSlider(caseNumber) {
+            // This would implement actual before/after image switching
+            console.log(`Toggling slider for case ${caseNumber}`);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

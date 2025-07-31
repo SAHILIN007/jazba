@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Living Soil Palette - Primary Colors */
+  --color-primary: #2E7D32; /* green-800 - Deep forest green for growth and stability */
+  --color-primary-50: #E8F5E8; /* green-50 */
+  --color-primary-100: #C8E6C9; /* green-100 */
+  --color-primary-200: #A5D6A7; /* green-200 */
+  --color-primary-300: #81C784; /* green-300 */
+  --color-primary-400: #66BB6A; /* green-400 */
+  --color-primary-500: #4CAF50; /* green-500 */
+  --color-primary-600: #43A047; /* green-600 */
+  --color-primary-700: #388E3C; /* green-700 */
+  --color-primary-800: #2E7D32; /* green-800 */
+  --color-primary-900: #1B5E20; /* green-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #5D4037; /* brown-700 - Rich earth brown for authenticity */
+  --color-secondary-50: #EFEBE9; /* brown-50 */
+  --color-secondary-100: #D7CCC8; /* brown-100 */
+  --color-secondary-200: #BCAAA4; /* brown-200 */
+  --color-secondary-300: #A1887F; /* brown-300 */
+  --color-secondary-400: #8D6E63; /* brown-400 */
+  --color-secondary-500: #795548; /* brown-500 */
+  --color-secondary-600: #6D4C41; /* brown-600 */
+  --color-secondary-700: #5D4037; /* brown-700 */
+  --color-secondary-800: #4E342E; /* brown-800 */
+  --color-secondary-900: #3E2723; /* brown-900 */
+
+  /* Accent Colors */
+  --color-accent: #FF8F00; /* amber-600 - Harvest gold for success moments */
+  --color-accent-50: #FFF8E1; /* amber-50 */
+  --color-accent-100: #FFECB3; /* amber-100 */
+  --color-accent-200: #FFE082; /* amber-200 */
+  --color-accent-300: #FFD54F; /* amber-300 */
+  --color-accent-400: #FFCA28; /* amber-400 */
+  --color-accent-500: #FFC107; /* amber-500 */
+  --color-accent-600: #FF8F00; /* amber-600 */
+  --color-accent-700: #FF6F00; /* amber-700 */
+  --color-accent-800: #E65100; /* amber-800 */
+  --color-accent-900: #BF360C; /* amber-900 */
+
+  /* Background Colors */
+  --color-background: #FAFAFA; /* gray-50 - Clean canvas */
+  --color-surface: #F5F5F5; /* gray-100 - Subtle elevation */
+  --color-surface-hover: #EEEEEE; /* gray-200 */
+
+  /* Text Colors */
+  --color-text-primary: #212121; /* gray-800 - Strong contrast */
+  --color-text-secondary: #616161; /* gray-600 - Clear hierarchy */
+  --color-text-muted: #9E9E9E; /* gray-500 */
+  --color-text-disabled: #BDBDBD; /* gray-400 */
+
+  /* Status Colors */
+  --color-success: #388E3C; /* green-700 - Positive growth */
+  --color-success-light: #C8E6C9; /* green-100 */
+  --color-warning: #F57C00; /* orange-600 - Gentle urgency */
+  --color-warning-light: #FFE0B2; /* orange-100 */
+  --color-error: #D32F2F; /* red-700 - Helpful concern */
+  --color-error-light: #FFCDD2; /* red-100 */
+
+  /* Border Colors */
+  --color-border: #E0E0E0; /* gray-300 */
+  --color-border-light: #F5F5F5; /* gray-100 */
+  --color-border-dark: #BDBDBD; /* gray-400 */
+
+  /* Shadow Values */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* Animation Timing */
+  --transition-fast: 200ms ease-out;
+  --transition-normal: 300ms ease-out;
+  --transition-slow: 500ms ease-out;
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-primary-700 active:bg-primary-800;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-secondary-800 active:bg-secondary-900;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-accent-700 active:bg-accent-800;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .card {
+    @apply bg-white rounded-lg p-6 shadow-subtle;
+    @apply border border-border-light;
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:shadow-card hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-border;
+    @apply focus:border-primary focus:ring-2 focus:ring-primary-100;
+    @apply transition-all duration-200 ease-out;
+    @apply font-inter text-text-primary placeholder-text-muted;
+  }
+
+  .farmer-story-card {
+    @apply bg-white rounded-lg p-8 shadow-card;
+    @apply border border-border-light;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:shadow-elevated hover:-translate-y-2;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-earth {
+    background: linear-gradient(135deg, var(--color-secondary-100), var(--color-primary-100));
+  }
+
+  .bg-gradient-harvest {
+    background: linear-gradient(135deg, var(--color-accent-100), var(--color-accent-300));
+  }
+
+  .animate-grow {
+    animation: grow 300ms ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 500ms ease-out;
+  }
+}
+
+/* Animations */
+@keyframes grow {
+  from {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 768px) {
+  .card {
+    @apply p-4;
+  }
+  
+  .farmer-story-card {
+    @apply p-6;
+  }
+}

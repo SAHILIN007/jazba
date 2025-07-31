@@ -1,0 +1,23 @@
+{
+  "name": "krishi-sevak-netlify",
+  "version": "1.0.0",
+  "description": "A web application for Krishi Sevak, bridging traditional farming wisdom with modern technology.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet'",
+    "deploy": "netlify deploy"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "agriculture",
+    "technology",
+    "AI",
+    "farming"
+  ]
+}

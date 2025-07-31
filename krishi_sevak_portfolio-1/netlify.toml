@@ -1,0 +1,14 @@
+# This file is the configuration file for Netlify deployment.
+
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[dev]
+  command = "npm run start"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
